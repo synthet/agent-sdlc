@@ -12,7 +12,7 @@ This kit is designed to be **copied or merged** into a consumer repository. It i
 ### 1. Drop-in copy (recommended for first use)
 
 1. Copy `.cursor/` and (if you use Claude Code) `.claude/` from this repo into your project root.
-2. Copy `templates/` if you want GitHub/issue templates; wire `.github/pull_request_template.md` manually or symlink.
+2. Copy `templates/` if you want GitHub/issue templates. For GitHub PR descriptions, copy `templates/pull_request_template.md` to `.github/pull_request_template.md` (or merge into an existing template).
 3. Merge [AGENTS.md](AGENTS.md) into your existing `AGENTS.md` (or create one): fill **Commands**, **Layout**, and **Boundaries**.
 4. Open the project in Cursor and type `/` in chat to confirm commands appear.
 
