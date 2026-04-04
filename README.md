@@ -46,3 +46,11 @@ MIT — see [LICENSE](LICENSE).
 ## Remote
 
 Upstream: `git@github.com:synthet/agent-sdlc.git`
+
+After creating the GitHub repo and configuring SSH (or HTTPS), publish with:
+
+```bash
+git push -u origin main
+```
+
+If `git remote` is missing: `git remote add origin git@github.com:synthet/agent-sdlc.git`
