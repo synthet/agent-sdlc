@@ -4,3 +4,7 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+
+# Local deep-research exports (not tracked)
+docs/deep-research-report-3.md
+docs/deep-research-report-4.md

@@ -1,0 +1,34 @@
+---
+description: Spec layers vocabulary (contracts, workflow, policy, eval, ops) and kit vs runtime boundaries
+globs:
+  - "**/specs/**"
+  - "**/AGENTS.md"
+alwaysApply: false
+---
+
+# Spec layers and kit boundaries
+
+## Vocabulary (agent engineering)
+
+When discussing **agent** or **LLM product** work, prefer explicit layers so `/spec`, `/plan`, and runtime design stay aligned:
+
+| Layer | Meaning (short) | Typical owner in a consumer repo |
+|-------|-----------------|----------------------------------|
+| **Contracts** | Tool schemas, structured I/O, API shapes | Code + schema artifacts |
+| **Workflow** | Graphs, steps, orchestration, checkpoints | Application / orchestration code |
+| **Policy** | Guardrails, middleware, allow/deny, PII rules | Middleware, config, policy services |
+| **Test / eval** | Datasets, rubrics, graders, regression suites | Tests, eval platforms, CI |
+| **Ops / observability** | Traces, metrics, audit logs, alerting | Telemetry stack, dashboards |
+
+Kit specs under `specs/` usually emphasize **product intent, acceptance criteria, and non-goals**. They may **mention** which layers are in scope for a feature; they do not replace executable contracts or eval code.
+
+## What agent-sdlc is / is not
+
+- **Is:** Markdown-and-config **SDLC** kit (Cursor rules, slash commands, Claude mirror, templates, skills pointers).
+- **Is not:** Application runtime, package manifests, LangGraph/LangSmith/OpenAI SDK code, or CI eval runners.
+
+For handoff language when work leaves the editor kit, see the **agent-runtime-handoff** skill under `.cursor/skills/`.
+
+## Traceability
+
+Align claims about external tools with [docs/references/agent-sdlc-upstream.md](docs/references/agent-sdlc-upstream.md). Deeper synthesis: [docs/research-synthesis-and-inventory.md](docs/research-synthesis-and-inventory.md).

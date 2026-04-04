@@ -26,3 +26,4 @@ Use when the user has approved a plan or given a small, explicit task.
 - [ ] No unrelated refactors
 - [ ] No secrets committed
 - [ ] AGENTS.md commands run (or documented why not)
+- [ ] If work spans **kit** vs **runtime** agents, handoff is clear (spec layers, eval/observability ownership)

@@ -8,6 +8,7 @@ This repository is a **documentation and config kit** (Cursor rules, slash comma
 - **INSTALL / README:** If adoption steps or paths change, update [INSTALL.md](../INSTALL.md) and [README.md](../README.md).
 - **Specs:** Non-trivial behavior or workflow changes should have a short spec under `specs/` (see [specs/README.md](../specs/README.md)).
 - **Secrets:** Do not commit credentials, tokens, or real `.env` content.
+- **Research / upstream claims:** Prefer citations via [docs/references/agent-sdlc-upstream.md](references/agent-sdlc-upstream.md); broader synthesis lives in [docs/research-synthesis-and-inventory.md](research-synthesis-and-inventory.md). Local deep-research exports under `docs/deep-research-report-*.md` may be gitignored per [.gitignore](../.gitignore).
 
 ## Optional tooling
 

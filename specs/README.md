@@ -4,9 +4,15 @@ Use this folder for **spec-first** work on the kit itself (new commands, rule ch
 
 ## Workflow
 
-1. Draft or refine a spec with `/spec` (or the template).
-2. Use `/plan` for multi-file or risky changes.
-3. Implement with small, reviewable diffs; update INSTALL/README when behavior visible to adopters.
+1. (Optional, program-level) Establish or refresh principles with `/constitution` using `templates/constitution.md`.
+2. Draft or refine a spec with `/spec` (or `templates/spec-feature.md`).
+3. If the spec is still ambiguous, run `/clarify` and merge decisions back into the spec.
+4. Use `/plan` for multi-file or risky changes; when **contracts** matter, link tool/API stubs (`templates/tool-contract-stub.md`).
+5. Break the approved plan into tasks with `/tasks` (save with `templates/tasks-breakdown.md` if helpful).
+6. Implement with small, reviewable diffs; update INSTALL/README when behavior visible to adopters.
+7. When agent or LLM **behavior quality** must be defined, use `/eval` with `templates/eval-rubric.md` (consumer-side runners only).
+
+For **agent or LLM** features, use **spec layers** (contracts, workflow, policy, eval, ops) vocabulary from `.cursor/rules/spec-layers-and-boundaries.mdc` so criteria stay checkable.
 
 ## Example
 

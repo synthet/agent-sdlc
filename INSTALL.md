@@ -64,6 +64,17 @@ Command **bodies** are intentionally parallel in both trees. Each `.claude/comma
 
 Project skills live under `.cursor/skills/<name>/SKILL.md`. Personal skills can stay in `~/.cursor/skills/`; this kit’s skills are **repo-local** so they version with the consumer project.
 
+## Maintainer-oriented docs (optional copy)
+
+Consumer repos can skip these; they help **kit maintainers** and teams aligning SDLC with agent runtime practice:
+
+- [docs/references/agent-sdlc-upstream.md](docs/references/agent-sdlc-upstream.md) — pinned links to Cursor, Claude Code, MCP, GitHub Spec Kit.
+- [docs/research-synthesis-and-inventory.md](docs/research-synthesis-and-inventory.md) — document inventory and research synthesis.
+- [templates/eval-rubric.md](templates/eval-rubric.md) — stub for application-side eval criteria (not run by this kit).
+- [templates/constitution.md](templates/constitution.md), [templates/tool-contract-stub.md](templates/tool-contract-stub.md), [templates/tasks-breakdown.md](templates/tasks-breakdown.md) — optional spec-first adjuncts.
+
+**Slash commands** in this kit include `/constitution`, `/spec`, `/clarify`, `/plan`, `/tasks`, `/eval`, `/implement`, and others under `.cursor/commands/` (mirrored in `.claude/commands/`). If you customize any command body, **update both** Cursor and Claude copies per [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md).
+
 ## Updating
 
 Re-copy from a **tagged release** of `agent-sdlc` and diff against your customizations. Keep a short `docs/AGENT_SDLC.md` in the consumer repo noting local overrides.

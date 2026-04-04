@@ -26,3 +26,4 @@ Use when starting non-trivial work. Produce a **spec** the team can review befor
 ## Optional
 
 - Save to `specs/<feature-slug>.md` using `templates/spec-feature.md` if the repo uses that layout.
+- For **agent or LLM product** work, tag which **spec layers** apply: **contracts** (tools/I/O), **workflow** (orchestration), **policy** (guardrails), **test/eval**, **ops/observability**. This kit’s `specs/` folder is SDLC intent—runtime artifacts live in the application repo (see `.cursor/rules/spec-layers-and-boundaries.mdc`).

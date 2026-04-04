@@ -30,7 +30,7 @@ There is no in-repo lint or test runner yet. Before claiming work complete, foll
 
 ### Layout
 
-- **Source:** `.cursor/`, `.claude/`, `templates/`, `docs/`, `specs/`, `.github/`
+- **Source:** `.cursor/`, `.claude/`, `templates/`, `docs/` (including `docs/references/`), `specs/`, `.github/`
 - **Tests:** N/A
 - **Specs / ADRs:** `specs/` (see [specs/README.md](specs/README.md))
 
@@ -42,11 +42,13 @@ There is no in-repo lint or test runner yet. Before claiming work complete, foll
 ### SDLC expectations
 
 - Prefer **small, reviewable** changes; match existing style and patterns.
-- For non-trivial kit changes, use a short spec under `specs/` and slash commands (`/spec`, `/plan`, `/implement`, etc.) when helpful.
+- For non-trivial kit changes, use a short spec under `specs/` and slash commands (`/constitution`, `/spec`, `/clarify`, `/plan`, `/tasks`, `/eval`, `/implement`, etc.) when helpful.
 
 ### Links
 
 - Contributing: [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)
+- Upstream doc index: [docs/references/agent-sdlc-upstream.md](docs/references/agent-sdlc-upstream.md)
+- Research synthesis (maintainers): [docs/research-synthesis-and-inventory.md](docs/research-synthesis-and-inventory.md)
 - CI: none in-tree
 - Issue tracker: upstream repository listed in [README.md](README.md)
 
