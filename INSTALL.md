@@ -18,7 +18,8 @@ This kit is designed to be **copied or merged** into a consumer repository. It i
 
 **Merge checklist**
 
-- [ ] Adjust `.cursor/rules/implementation.mdc` **globs** to match your source tree (`src/`, `app/`, etc.).
+- [ ] Adjust `.cursor/rules/implementation.mdc` **globs** to match your source tree (`src/`, `app/`, etc.). The kit’s own globs also include `.cursor/`, `.claude/`, and `templates/` for maintenance of this repository; trim or extend after copying if needed.
+- [ ] (Optional) Add a `specs/` folder for feature specs; see `specs/README.md` in this repo for a pilot layout.
 - [ ] Set real lint/test/build commands in `AGENTS.md`.
 - [ ] Remove `.claude/` if you only use Cursor.
 - [ ] Do **not** enable `hooks.json` until you read the Hooks section below.

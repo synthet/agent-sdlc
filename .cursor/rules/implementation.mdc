@@ -1,6 +1,10 @@
 ---
 description: Implementation discipline — match codebase style and minimize diff noise
-globs: "**/src/**"
+globs:
+  - "**/src/**"
+  - "**/.cursor/**"
+  - "**/.claude/**"
+  - "**/templates/**"
 alwaysApply: false
 ---
 

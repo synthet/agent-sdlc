@@ -8,6 +8,8 @@ Reusable **spec-driven SDLC** artifacts for **Cursor** and **Claude Code**: rule
 |------|---------|
 | [AGENTS.md](AGENTS.md) | Template charter for any repo |
 | [INSTALL.md](INSTALL.md) | How to adopt this kit in another project |
+| [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) | Maintainer notes for this repo |
+| [specs/](specs/) | Spec-first examples and layout for kit work |
 | `.cursor/rules/` | Cursor Rules (`.mdc`) — guardrails and scoped guidance |
 | `.cursor/commands/` | Cursor slash commands (`/spec`, `/plan`, …) |
 | `.cursor/skills/` | Project-local Agent Skills |

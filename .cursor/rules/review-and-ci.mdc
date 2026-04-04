@@ -1,6 +1,8 @@
 ---
 description: PR hygiene, CI interpretation, and merge readiness
-globs: "**/.github/**"
+globs:
+  - "**/.github/**"
+  - "**/docs/**"
 alwaysApply: false
 ---
 
